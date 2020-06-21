@@ -1,5 +1,10 @@
-from pyspark import SparkContext
+from pyspark.sql import SparkSession  
 
+scSpark = SparkSession \
+    .builder \
+    .appName("Python Spark SQL basic example: Reading CSV file without mentioning schema") \
+    .config("spark.some.config.option", "some-value") \
+    .getOrCreate()
 
-sc = SparkContext()
-data = range(1,1000)
+sdfData = scSpark.read.csv("/home/oswald/data/all_data.csv", header=True, sep=",")
+sdfData.show()
