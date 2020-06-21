@@ -1,0 +1,21 @@
+--2020-06-21 02:32:24--  https://doc-0c-04-docs.googleusercontent.com/docs/securesc/fo979nek4lossr2nm4q43lnpspcgki5f/8dtkjhs4jnqtachqd5igq2efmbb2ijeo/1592724675000/11423463577108932969/09005364966380381750/0B-4W2dww7ELNazFfOFVhNG5vckE?e=download
+Resolving doc-0c-04-docs.googleusercontent.com (doc-0c-04-docs.googleusercontent.com)... 216.58.193.33, 2607:f8b0:4012:805::2001
+Connecting to doc-0c-04-docs.googleusercontent.com (doc-0c-04-docs.googleusercontent.com)|216.58.193.33|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://docs.google.com/nonceSigner?nonce=9dlo3h04orraq&continue=https://doc-0c-04-docs.googleusercontent.com/docs/securesc/fo979nek4lossr2nm4q43lnpspcgki5f/8dtkjhs4jnqtachqd5igq2efmbb2ijeo/1592724675000/11423463577108932969/09005364966380381750/0B-4W2dww7ELNazFfOFVhNG5vckE?e%3Ddownload&hash=a86sv1gsq52682jkfk8hhqn08h5avj4n [following]
+--2020-06-21 02:32:25--  https://docs.google.com/nonceSigner?nonce=9dlo3h04orraq&continue=https://doc-0c-04-docs.googleusercontent.com/docs/securesc/fo979nek4lossr2nm4q43lnpspcgki5f/8dtkjhs4jnqtachqd5igq2efmbb2ijeo/1592724675000/11423463577108932969/09005364966380381750/0B-4W2dww7ELNazFfOFVhNG5vckE?e%3Ddownload&hash=a86sv1gsq52682jkfk8hhqn08h5avj4n
+Resolving docs.google.com (docs.google.com)... 216.58.195.238, 2607:f8b0:4012:800::200e
+Connecting to docs.google.com (docs.google.com)|216.58.195.238|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/nonceSigner?nonce%3D9dlo3h04orraq%26continue%3Dhttps://doc-0c-04-docs.googleusercontent.com/docs/securesc/fo979nek4lossr2nm4q43lnpspcgki5f/8dtkjhs4jnqtachqd5igq2efmbb2ijeo/1592724675000/11423463577108932969/09005364966380381750/0B-4W2dww7ELNazFfOFVhNG5vckE?e%253Ddownload%26hash%3Da86sv1gsq52682jkfk8hhqn08h5avj4n&followup=https://docs.google.com/nonceSigner?nonce%3D9dlo3h04orraq%26continue%3Dhttps://doc-0c-04-docs.googleusercontent.com/docs/securesc/fo979nek4lossr2nm4q43lnpspcgki5f/8dtkjhs4jnqtachqd5igq2efmbb2ijeo/1592724675000/11423463577108932969/09005364966380381750/0B-4W2dww7ELNazFfOFVhNG5vckE?e%253Ddownload%26hash%3Da86sv1gsq52682jkfk8hhqn08h5avj4n [following]
+--2020-06-21 02:32:26--  https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/nonceSigner?nonce%3D9dlo3h04orraq%26continue%3Dhttps://doc-0c-04-docs.googleusercontent.com/docs/securesc/fo979nek4lossr2nm4q43lnpspcgki5f/8dtkjhs4jnqtachqd5igq2efmbb2ijeo/1592724675000/11423463577108932969/09005364966380381750/0B-4W2dww7ELNazFfOFVhNG5vckE?e%253Ddownload%26hash%3Da86sv1gsq52682jkfk8hhqn08h5avj4n&followup=https://docs.google.com/nonceSigner?nonce%3D9dlo3h04orraq%26continue%3Dhttps://doc-0c-04-docs.googleusercontent.com/docs/securesc/fo979nek4lossr2nm4q43lnpspcgki5f/8dtkjhs4jnqtachqd5igq2efmbb2ijeo/1592724675000/11423463577108932969/09005364966380381750/0B-4W2dww7ELNazFfOFVhNG5vckE?e%253Ddownload%26hash%3Da86sv1gsq52682jkfk8hhqn08h5avj4n
+Resolving accounts.google.com (accounts.google.com)... 172.217.7.45, 2607:f8b0:4012:809::200d
+Connecting to accounts.google.com (accounts.google.com)|172.217.7.45|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘0B-4W2dww7ELNazFfOFVhNG5vckE?e=download’
+
+0B-4W2dww7ELNazFfOFVhNG5vckE?e=download                         [<=>                                                                                                                                      ]       0  --.-KB/s               0B-4W2dww7ELNazFfOFVhNG5vckE?e=download                         [ <=>                                                                                                                                     ]  13.38K  64.8KB/s               0B-4W2dww7ELNazFfOFVhNG5vckE?e=download                         [  <=>                                                                                                                                    ]  60.89K   203KB/s    in 0.3s    
+
+2020-06-21 02:32:27 (203 KB/s) - ‘0B-4W2dww7ELNazFfOFVhNG5vckE?e=download’ saved [62349]
+
