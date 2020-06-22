@@ -41,10 +41,14 @@ conteoComercial.show()
 conteoProducto = scSpark.sql("SELECT estado, producto, count(1) as conteo from profeco group by estado, producto order by conteo desc")
 conteoProducto = conteoProducto.toPandas()
 
-conteProductoEstado = conteoProducto.groupby('estado').head(5)
+conteoProductoEstado = conteoProducto.groupby('estado').head(5)
+conteoProductoEstado.to_csv("conteo.csv")
+
+#conteoProductoEstado[conteoProductoEstado["estado"] == "MICHOACÁN DE OCAMPO"]
+
+
 
 #Conteo de productos por cadena comercial
 conteoProducto = scSpark.sql("SELECT cadenaComercial, count(distinct producto) as conteo from profeco group by cadenaComercial order by conteo desc")
 conteoProducto.show()
 
-conteoProducto
