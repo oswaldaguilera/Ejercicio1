@@ -56,3 +56,8 @@ conteoProducto = scSpark.sql("SELECT estado, producto, count(1) as conteo from p
 conteoProducto = conteoProducto.toPandas()
 
 conteProductoEstado = conteoProducto.groupby('estado').head(5)
+
+
+fecha = scSpark.sql("SELECT distinct fechaRegistro as fecha from profeco")
+fecha = fecha.toPandas()
+
