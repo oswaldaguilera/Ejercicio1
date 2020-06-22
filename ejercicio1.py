@@ -25,31 +25,17 @@ sdfData.createOrReplaceTempView("profeco")
 
 
 #Conteo de registros
-conteoTotal = scSpark.sql("SELECT count(1) from profeco")
+conteoTotal = scSpark.sql("SELECT count(1) as conteo from profeco")
 conteoTotal.show()
 
 
 #Conteo de categorías
-conteoCategorias = scSpark.sql("SELECT categoria, count(distinct producto) as conteo from profeco group by categoria order by conteo asc")
-conteoCategorias = conteoCategorias.toPandas()
-
-
-ax = conteoCategorias.plot.barh(x='categoria', y='conteo', legend=True, rot = 0)
-plt.tight_layout()
-plt.rcParams['legend.title_fontsize'] = 'xx-small'
-plt.savefig('categoriasBarChart.png')
-
+conteoCategorias = scSpark.sql("SELECT count(distinct categoria) as conteo from profeco")
+conteoCategorias.show()
 
 #Cadenas comerciales monitoreadas
-conteoComercial = scSpark.sql("SELECT cadenaComercial, count(distinct producto) as conteo from profeco group by cadenaComercial")
-conteoComercial = conteoComercial.toPandas()
-conteoComercial
-ax = conteoComercial.plot.barh(x='cadenaComercial', y='conteo', legend=True, rot = 0)
-plt.tight_layout()
-plt.rcParams['legend.title_fontsize'] = 'xx-small'
-plt.savefig('comercialBarChart.png')
-
-conteoComercial.head()
+conteoComercial = scSpark.sql("SELECT count(distinct cadenaComercial) as conteo from profeco")
+conteoComercial.show()
 
 #Productos mas monitoreados por cadena
 conteoProducto = scSpark.sql("SELECT estado, producto, count(1) as conteo from profeco group by estado, producto order by conteo desc")
@@ -57,7 +43,8 @@ conteoProducto = conteoProducto.toPandas()
 
 conteProductoEstado = conteoProducto.groupby('estado').head(5)
 
+#Conteo de productos por cadena comercial
+conteoProducto = scSpark.sql("SELECT cadenaComercial, count(distinct producto) as conteo from profeco group by cadenaComercial order by conteo desc")
+conteoProducto.show()
 
-fecha = scSpark.sql("SELECT count (distinct fechaRegistro) as fecha from profeco")
-fecha = fecha.toPandas()
-
+conteoProducto
